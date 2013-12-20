@@ -1,0 +1,18 @@
+{
+    "name": "PHPStudyGroup/KidsQuest",
+    "description": "Kids Chores and Achievement Tracker",
+    "license": "TBD",
+    "keywords": [
+        "kids",
+        "chores",
+        "achievement"
+    ],
+    "homepage": "http://phpstudygroup.com/",
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zendframework": "2.2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.28"
+    }
+}
