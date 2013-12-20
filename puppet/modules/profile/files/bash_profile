@@ -1,0 +1,25 @@
+# .bash_profile (works)
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin:/vagrant/vendor/bin
+
+export PATH
+
+function mybugon() {
+  export PHP_IDE_CONFIG="serverName=kidsquest.dev"
+  export XDEBUG_CONFIG="idekey=PHPSTORM"
+}
+
+function mybugoff() {
+  unset PHP_IDE_CONFIG
+  unset XDEBUG_CONFIG
+}
+
+alias bugon="mybugon"
+alias bugoff="mybugoff"
