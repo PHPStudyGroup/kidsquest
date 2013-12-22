@@ -1,0 +1,14 @@
+NameVirtualHost *:80
+<VirtualHost *:80>
+   DocumentRoot "/vagrant/public"
+   ServerName kidsquest.dev
+
+   <Directory /vagrant/public>
+     AllowOverride All
+     Order deny,allow
+     Allow from All
+   </Directory>
+
+   FileETag None
+   EnableSendfile Off
+</VirtualHost>
