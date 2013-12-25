@@ -1,7 +1,7 @@
 {
-    "name": "PHPStudyGroup/KidsQuest",
+    "name": "php-study-group/kids-quest",
     "description": "Kids Chores and Achievement Tracker",
-    "license": "TBD",
+    "license": "BSD-3-Clause",
     "keywords": [
         "kids",
         "chores",
