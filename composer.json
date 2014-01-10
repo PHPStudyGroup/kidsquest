@@ -1,6 +1,7 @@
 {
     "name": "php-study-group/kids-quest",
     "description": "Kids Chores and Achievement Tracker",
+    "type": "project",
     "license": "BSD-3-Clause",
     "keywords": [
         "kids",
