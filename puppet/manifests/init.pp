@@ -2,7 +2,12 @@
 
 include httpd
 include php
-include application
+class { 'pgsql':
+  host_ip => $host_ip,
+}
+class { 'application':
+  require => Class['pgsql'],
+}
 include profile
 include git
 class { 'composer':
