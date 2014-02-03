@@ -25,4 +25,4 @@ Get ready to make your kids work for candy and other fun things
 
 ## This project is brought to you by [PHPSTUDYGROUP](http://www.phpstudygroup.com)
 
-Follow along with us every Thursday night as we add new additions to the code. 
+Follow along with us every Thursday night as we add new additions to the code!
