@@ -76,8 +76,6 @@ Vagrant.configure("2") do |config|
     puppet.manifest_file  = "init.pp"
     puppet.module_path    = "puppet/modules"
     puppet.facter = {
-        #"web_host" => WEB_HOST,
-        #"vm_ip" => VM_IP,
         "host_ip" => $host_ip,
     }
   end
