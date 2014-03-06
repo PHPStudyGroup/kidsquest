@@ -2,6 +2,9 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
+
+  $host_ip = "192.168.97.101"
+
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
@@ -20,7 +23,7 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network :private_network, ip: "192.168.97.101"
+  config.vm.network :private_network, ip: $host_ip
 
   config.vm.host_name = "kidsquest"
 
@@ -72,6 +75,9 @@ Vagrant.configure("2") do |config|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file  = "init.pp"
     puppet.module_path    = "puppet/modules"
+    puppet.facter = {
+        "host_ip" => $host_ip,
+    }
   end
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
